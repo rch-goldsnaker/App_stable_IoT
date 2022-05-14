@@ -3,7 +3,7 @@
     <div class="sidebar-wrapper" ref="sidebarScrollArea">
       <div class="logo">
         <a href="https://rch-goldsnaker.github.io/R006_Portafolio_NextJs/" class="simple-text logo-mini">
-          <img src="https://yt3.ggpht.com/ytc/AAUvwnjakiyR7urXlB0hxyXjpyXZI2k4eFlahDd5vfgDEQ=s900-c-k-c0x00ffffff-no-rj" alt="app-logo" />
+          <img src="https://media.graphassets.com/ioUqOeQSf6jF6Hp7XAwi?_gl=1*j695bd*_ga*Njk5NDkzNDEuMTY1MDA2OTQxMw..*_ga_G6FYGSYGZ4*MTY1MjU1NTEzOC4xNC4xLjE2NTI1NTU0NjkuNjA.png" alt="app-logo" />
         </a>
         <a href="https://rch-goldsnaker.github.io/R006_Portafolio_NextJs/" class="simple-text logo-normal">
           {{ title }}

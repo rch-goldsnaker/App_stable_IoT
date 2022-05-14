@@ -9,7 +9,7 @@
             rel="noopener"
             class="nav-link"
           >
-            IoTicos.org
+            IoT
           </a>
         </li>
         <li class="nav-item">
@@ -34,15 +34,13 @@
         </li>
       </ul>
       <div class="copyright">
-        &copy; {{ year }}, made with <i class="tim-icons icon-heart-2"></i> by
-        
+        &copy; {{ year }}
         <a
           href="https://rch-goldsnaker.github.io/R006_Portafolio_NextJs/"
           target="_blank"
           rel="noopener"
-          >IoTicos</a
+          >GoldSnaker</a
         >
-        for a better web.
       </div>
     </div>
   </footer>

@@ -2,7 +2,7 @@
   "name": "iot_gl_app",
   "version": "1.0.0",
   "description": "IOT_GL_APP",
-  "author": "IoTicos.org",
+  "author": "GoldSnaker",
   "scripts": {
     "dev": "nuxt",
     "devn": "nodemon api/index.js --exec babel-node",
