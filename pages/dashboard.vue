@@ -30,6 +30,11 @@
         v-if="widget.widget == 'indicator'"
         :config="fixWidget(widget)"
       ></Iotindicator>
+
+      <EspCam
+        v-if="widget.widget == 'espCam'"
+        :config="fixWidget(widget)"
+      ></EspCam>
     </div>
   </div>
 

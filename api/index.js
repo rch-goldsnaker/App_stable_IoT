@@ -4,8 +4,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
 const colors = require("colors");
-
-
+const WebSocket = require('ws');
 
 require('dotenv').config();
 
@@ -104,7 +103,26 @@ mongoose.connect(uri, options).then(
   }
 );
 
+// Websocket Esp32Cam 
 
+const WS_PORT  = process.env.WS_PORT;
+const wsServer = new WebSocket.Server({port: WS_PORT}, ()=> console.log(`WS Server is listening at ${WS_PORT}`));
+
+let connectedClients = [];
+wsServer.on('connection', (ws, req)=>{
+    console.log('Connected');
+    connectedClients.push(ws);
+
+    ws.on('message', data => {
+        connectedClients.forEach((ws,i)=>{
+            if(ws.readyState === ws.OPEN){
+                ws.send(data);
+            }else{
+                connectedClients.splice(i ,1);
+            }
+        })
+    });
+});
 
 
 

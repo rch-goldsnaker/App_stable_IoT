@@ -44,6 +44,11 @@
                 value="button"
                 label="Button OUTPUT ->"
               ></el-option>
+              <el-option
+                class="text-dark"
+                value="espCam"
+                label="EspCam INPUT <-"
+              ></el-option>
             </el-select>
 
             <br />
@@ -529,6 +534,45 @@
 
               <br /><br />
             </div>
+
+            <!-- FORM ESPCAM TYPE -->
+            <div v-if="widgetType == 'espCam'">
+              <base-input
+                v-model="espCamConfig.variableFullName"
+                label="Var Name"
+                type="text"
+              >
+              </base-input>
+
+              <base-input
+                v-model="espCamConfig.variableSendFreq"
+                label="Send Freq"
+                type="text"
+              ></base-input>
+
+              <el-select
+                v-model="espCamConfig.column"
+                class="select-success"
+                placeholder="Select Column Width"
+                style="width: 100%;"
+              >
+                <el-option
+                  class="text-dark"
+                  value="col-3"
+                  label="col-3"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="col-6"
+                  label="col-6"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="col-12"
+                  label="col-12"
+                ></el-option>
+              </el-select>
+            </div>
           </div>
 
           <!-- WIDGET PREVIEW -->
@@ -549,6 +593,10 @@
               v-if="widgetType == 'indicator'"
               :config="iotIndicatorConfig"
             ></Iotindicator>
+            <EspCam
+              v-if="widgetType == 'espCam'"
+              :config="espCamConfig"
+            ></EspCam>
           </div>
         </div>
 
@@ -602,6 +650,11 @@
           v-if="widget.widget == 'indicator'"
           :config="widget"
         ></Iotindicator>
+
+        <EspCam
+          v-if="widget.widget == 'espCam'"
+          :config="espCamConfig"
+        ></EspCam>
       </div>
     </div>
 
@@ -800,6 +853,22 @@ export default {
         message: "{'fanstatus': 'stop'}"
       },
 
+      espCamConfig: {
+        userId: "userid",
+        selectedDevice: {
+          name: "Home",
+          dId: "8888"
+        },
+        variableFullName: "espCamVariable",
+        variable: "varname",
+        variableType: "input",
+        variableSendFreq: "30",
+        class: "success",
+        widget: "espCam",
+        icon: "fa-bath",
+        column: "col-12"
+      },
+
 
     };
   },
@@ -949,6 +1018,11 @@ export default {
       if (this.widgetType == "indicator") {
         this.iotIndicatorConfig.variable = this.makeid(10);
         this.widgets.push(JSON.parse(JSON.stringify(this.iotIndicatorConfig)));
+      }
+
+      if (this.widgetType == "espCam") {
+        this.espCamConfig.variable = this.makeid(10);
+        this.widgets.push(JSON.parse(JSON.stringify(this.espCamConfig)));
       }
 
     },

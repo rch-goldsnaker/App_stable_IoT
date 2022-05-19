@@ -62,7 +62,9 @@ export default {
   env:{
    mqtt_prefix: process.env.MQTT_PREFIX,
    mqtt_host: process.env.MQTT_HOST,
-   mqtt_port: process.env.MQTT_PORT
+   mqtt_port: process.env.MQTT_PORT,
+   ws_host: process.env.WS_HOST,
+   ws_port: process.env.WS_PORT
   },
 
   server: {
