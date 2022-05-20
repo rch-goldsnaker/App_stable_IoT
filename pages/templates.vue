@@ -4,7 +4,7 @@
     <div class="row">
       <card>
         <div slot="header">
-          <h4 class="card-title">Widgets {{iotIndicatorConfig.column}}</h4>
+          <h4 class="card-title">Widgets Configuration</h4>
         </div>
 
         <div class="row">
@@ -135,48 +135,13 @@
               >
                 <el-option
                   class="text-dark"
-                  value="col-3"
-                  label="col-3"
+                  value="col-lg-3"
+                  label="col-lg-3"
                 ></el-option>
                 <el-option
                   class="text-dark"
-                  value="col-4"
-                  label="col-4"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-5"
-                  label="col-5"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-6"
-                  label="col-6"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-7"
-                  label="col-7"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-8"
-                  label="col-8"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-9"
-                  label="col-9"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-10"
-                  label="col-10"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-11"
-                  label="col-11"
+                  value="col-lg-6"
+                  label="col-lg-6"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -243,48 +208,13 @@
               >
                 <el-option
                   class="text-dark"
-                  value="col-3"
-                  label="col-3"
+                  value="col-lg-3"
+                  label="col-lg-3"
                 ></el-option>
                 <el-option
                   class="text-dark"
-                  value="col-4"
-                  label="col-4"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-5"
-                  label="col-5"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-6"
-                  label="col-6"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-7"
-                  label="col-7"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-8"
-                  label="col-8"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-9"
-                  label="col-9"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-10"
-                  label="col-10"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-11"
-                  label="col-11"
+                  value="col-lg-6"
+                  label="col-lg-6"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -365,48 +295,13 @@
               >
                 <el-option
                   class="text-dark"
-                  value="col-3"
-                  label="col-3"
+                  value="col-lg-3"
+                  label="col-lg-3"
                 ></el-option>
                 <el-option
                   class="text-dark"
-                  value="col-4"
-                  label="col-4"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-5"
-                  label="col-5"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-6"
-                  label="col-6"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-7"
-                  label="col-7"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-8"
-                  label="col-8"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-9"
-                  label="col-9"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-10"
-                  label="col-10"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-11"
-                  label="col-11"
+                  value="col-lg-6"
+                  label="col-lg-6"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -482,48 +377,13 @@
               >
                 <el-option
                   class="text-dark"
-                  value="col-3"
-                  label="col-3"
+                  value="col-lg-3"
+                  label="col-lg-3"
                 ></el-option>
                 <el-option
                   class="text-dark"
-                  value="col-4"
-                  label="col-4"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-5"
-                  label="col-5"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-6"
-                  label="col-6"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-7"
-                  label="col-7"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-8"
-                  label="col-8"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-9"
-                  label="col-9"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-10"
-                  label="col-10"
-                ></el-option>
-                <el-option
-                  class="text-dark"
-                  value="col-11"
-                  label="col-11"
+                  value="col-lg-6"
+                  label="col-lg-6"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -544,11 +404,46 @@
               >
               </base-input>
 
+              <br />
+
               <base-input
-                v-model="espCamConfig.variableSendFreq"
-                label="Send Freq"
+                v-model="espCamConfig.icon"
+                label="Icon"
                 type="text"
               ></base-input>
+
+              <br />
+              <el-select
+                v-model="espCamConfig.class"
+                class="select-success"
+                placeholder="Select Class"
+                style="width: 100%;"
+              >
+                <el-option
+                  class="text-success"
+                  value="success"
+                  label="Success"
+                ></el-option>
+                <el-option
+                  class="text-primary"
+                  value="primary"
+                  label="Primary"
+                ></el-option>
+                <el-option
+                  class="text-warning"
+                  value="warning"
+                  label="Warning"
+                ></el-option>
+                <el-option
+                  class="text-danger"
+                  value="danger"
+                  label="Danger"
+                ></el-option>
+              </el-select>
+
+              <br />
+              <br />
+              <br />
 
               <el-select
                 v-model="espCamConfig.column"
@@ -558,13 +453,13 @@
               >
                 <el-option
                   class="text-dark"
-                  value="col-3"
-                  label="col-3"
+                  value="col-lg-3"
+                  label="col-lg-3"
                 ></el-option>
                 <el-option
                   class="text-dark"
-                  value="col-6"
-                  label="col-6"
+                  value="col-lg-6"
+                  label="col-lg-6"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -794,7 +689,7 @@ export default {
         variableSendFreq: "30",
         unit: "Watts",
         class: "success",
-        column: "col-12",
+        column: "col-lg-6",
         decimalPlaces: 2,
         widget: "numberchart",
         icon: "fa-sun",
@@ -814,7 +709,7 @@ export default {
         class: "danger",
         widget: "switch",
         icon: "fa-bath",
-        column: "col-6"
+        column: "col-lg-6"
       },
 
 
@@ -831,7 +726,7 @@ export default {
         class: "success",
         widget: "indicator",
         icon: "fa-bath",
-        column: "col-6"
+        column: "col-lg-6"
       },
 
       configButton: {
@@ -847,7 +742,7 @@ export default {
         variable: "var1",
         variableType: "output",
         icon: "fa-sun",
-        column: "col-4",
+        column: "col-lg-6",
         widget: "button",
         class: "danger",
         message: "{'fanstatus': 'stop'}"
@@ -856,17 +751,15 @@ export default {
       espCamConfig: {
         userId: "userid",
         selectedDevice: {
-          name: "Home",
+          name: "Esp32 Cam",
           dId: "8888"
         },
-        variableFullName: "espCamVariable",
+        variableFullName: "EspCam32",
         variable: "varname",
         variableType: "input",
-        variableSendFreq: "30",
-        class: "success",
         widget: "espCam",
-        icon: "fa-bath",
-        column: "col-12"
+        icon: "fa-camera",
+        column: "col-lg-6"
       },
 
 
@@ -1047,3 +940,10 @@ export default {
   }
 };
 </script>
+<style>
+media (min-width: 992px)
+.col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+</style>
