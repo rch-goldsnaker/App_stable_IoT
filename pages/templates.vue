@@ -140,6 +140,11 @@
                 ></el-option>
                 <el-option
                   class="text-dark"
+                  value="col-lg-4"
+                  label="col-lg-4"
+                ></el-option>
+                <el-option
+                  class="text-dark"
                   value="col-lg-6"
                   label="col-lg-6"
                 ></el-option>
@@ -147,6 +152,36 @@
                   class="text-dark"
                   value="col-12"
                   label="col-12"
+                ></el-option>
+              </el-select>
+
+              <br /><br /><br />
+
+              <el-select
+                v-model="ncConfig.typeChart"
+                class="select-success"
+                placeholder="Select type Chart"
+                style="width: 100%;"
+              >
+                <el-option
+                  class="text-dark"
+                  value="line"
+                  label="line"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="spline"
+                  label="spline"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="area"
+                  label="area"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="areaspline"
+                  label="areaspline"
                 ></el-option>
               </el-select>
 
@@ -210,6 +245,11 @@
                   class="text-dark"
                   value="col-lg-3"
                   label="col-lg-3"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="col-lg-4"
+                  label="col-lg-4"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -300,6 +340,11 @@
                 ></el-option>
                 <el-option
                   class="text-dark"
+                  value="col-lg-4"
+                  label="col-lg-4"
+                ></el-option>
+                <el-option
+                  class="text-dark"
                   value="col-lg-6"
                   label="col-lg-6"
                 ></el-option>
@@ -382,6 +427,11 @@
                 ></el-option>
                 <el-option
                   class="text-dark"
+                  value="col-lg-4"
+                  label="col-lg-4"
+                ></el-option>
+                <el-option
+                  class="text-dark"
                   value="col-lg-6"
                   label="col-lg-6"
                 ></el-option>
@@ -455,6 +505,11 @@
                   class="text-dark"
                   value="col-lg-3"
                   label="col-lg-3"
+                ></el-option>
+                <el-option
+                  class="text-dark"
+                  value="col-lg-4"
+                  label="col-lg-4"
                 ></el-option>
                 <el-option
                   class="text-dark"
@@ -684,6 +739,7 @@ export default {
           dId: "8888"
         },
         variableFullName: "temperature",
+        typeChart:"line",
         variable: "varname",
         variableType: "input",
         variableSendFreq: "30",
@@ -940,10 +996,3 @@ export default {
   }
 };
 </script>
-<style>
-media (min-width: 992px)
-.col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-}
-</style>

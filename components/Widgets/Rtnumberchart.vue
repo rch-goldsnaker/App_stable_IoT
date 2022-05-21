@@ -49,6 +49,7 @@
                     chart: {
                         renderTo: 'container',
                         defaultSeriesType: 'line',
+                        type: '',
                         backgroundColor: 'rgba(0,0,0,0)',
                     },
                     title: {
@@ -130,6 +131,7 @@
 
                         this.chartOptions.series[0].name = this.config.variableFullName + " " + this.config.unit;
                         this.updateColorClass();
+                        this.getChartType();
                         window.dispatchEvent(new Event('resize'));
                     }, 300);
                 }
@@ -139,6 +141,7 @@
 
             this.getNow();
             this.updateColorClass();
+            this.getChartType();
 
         },
         beforeDestroy() {
@@ -283,6 +286,23 @@
 
 
             },
+            getChartType() {
+
+                var c = this.config.typeChart;
+
+                if (c == "line") {
+                    this.chartOptions.chart.type = "line";
+                }
+                if (c == "spline") {
+                    this.chartOptions.chart.type = "spline";
+                }
+                if (c == "area") {
+                    this.chartOptions.chart.type = "area";
+                }
+                if (c == "areaspline") {
+                    this.chartOptions.chart.type = "areaspline";
+                }
+            }
         }
     };
 </script>

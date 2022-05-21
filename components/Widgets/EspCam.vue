@@ -111,9 +111,4 @@
     };
 </script>
 <style>
-media (min-width: 992px)
-.col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-}
 </style>
