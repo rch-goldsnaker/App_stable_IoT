@@ -81,7 +81,10 @@
                                 connectorAllowed: false,
                             },
                             pointStart: 2010
-                        }
+                        },
+                        areaspline: {
+                            fillOpacity: 0.05
+                        },
                     },
                     series: [{
                         name: '',
