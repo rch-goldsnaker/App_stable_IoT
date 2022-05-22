@@ -9,7 +9,7 @@
     <i
       class="fa "
       :class="[config.icon, getIconColorClass()]"
-      style="font-size: 30px"
+      style="font-size: 50px"
     ></i>
 
     <base-button  @click="sendValue()" :type="config.class" class="mb-3 pull-right" size="lg">{{config.text}}</base-button>
@@ -53,10 +53,6 @@ export default {
    
 
     getIconColorClass() {
-
-      if (!this.sending) {
-        return "text-dark";
-      }
 
       if (this.config.class == "success") {
         return "text-success";

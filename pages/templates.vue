@@ -797,7 +797,7 @@ export default {
         variableFullName: "Pump",
         variable: "var1",
         variableType: "output",
-        icon: "fa-sun",
+        icon: "fa-lightbulb",
         column: "col-lg-6",
         widget: "button",
         class: "danger",
