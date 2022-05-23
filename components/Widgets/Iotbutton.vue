@@ -53,7 +53,6 @@ export default {
    
 
     getIconColorClass() {
-      //test
 
       if (this.config.class == "success") {
         return "text-success";
