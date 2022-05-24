@@ -282,6 +282,16 @@ export default {
     },
 
     createNewRule() {
+
+      if ( localStorage.getItem("demo") == "true") {
+          this.$notify({
+            type: "success",
+            icon: "tim-icons icon-alert-circle-exc",
+            message: "This is a Demo version"
+          });
+        return;
+      }
+
       if (this.selectedWidgetIndex == null) {
         this.$notify({
           type: "warning",

@@ -69,7 +69,9 @@ export default {
     };
   },
   mounted() {
-
+    localStorage.setItem('auth', '{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MjhjNjQzOWJlZmNjNzdmOTk1NzZhMDEiLCJuYW1lIjoiZGVtbyIsImVtYWlsIjoiZGVtb0BnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2NTMzNjg0NzUsImV4cCI6MTY1NTk2MDQ3NX0.6037aRWu0TKC6f_BXcM_jGrkYd7cf3eBvEwT2rgphsQ","userData":{"_id":"628c6439befcc77f99576a01","name":"demo","email":"demo@gmail.com","__v":0}}');
+    localStorage.setItem('demo', 'true');
+    $nuxt.$router.push('/dashboard');
   },
   methods: {
     login() {

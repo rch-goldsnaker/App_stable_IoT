@@ -855,6 +855,16 @@ export default {
 
     //Save Template
     async saveTemplate() {
+
+      if ( localStorage.getItem("demo") == "true") {
+          this.$notify({
+            type: "success",
+            icon: "tim-icons icon-alert-circle-exc",
+            message: "This is a Demo version"
+          });
+        return;
+      }
+
       const axiosHeaders = {
         headers: {
           token: this.$store.state.auth.token
@@ -898,6 +908,14 @@ export default {
     //Delete Template
     async deleteTemplate(template) {
 
+      if ( localStorage.getItem("demo") == "true") {
+          this.$notify({
+            type: "success",
+            icon: "tim-icons icon-alert-circle-exc",
+            message: "This is a Demo version"
+          });
+        return;
+      }
       
       const axiosHeaders = {
         headers: {

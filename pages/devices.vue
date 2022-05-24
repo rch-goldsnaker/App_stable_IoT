@@ -168,6 +168,15 @@ export default {
   },
   methods: {
     updateSaverRuleStatus(rule) {
+
+      if ( localStorage.getItem("demo") == "true") {
+          this.$notify({
+            type: "success",
+            icon: "tim-icons icon-alert-circle-exc",
+            message: "This is a Demo version"
+          });
+        return;
+      }
       
       var ruleCopy = JSON.parse(JSON.stringify(rule));
 
@@ -214,6 +223,8 @@ export default {
     },
 
     deleteDevice(device) {
+
+
       const axiosHeaders = {
         headers: {
           token: this.$store.state.auth.accessToken
@@ -250,6 +261,16 @@ export default {
     },
     //new device
     createNewDevice() {
+
+      if ( localStorage.getItem("demo") == "true") {
+          this.$notify({
+            type: "success",
+            icon: "tim-icons icon-alert-circle-exc",
+            message: "This is a Demo version"
+          });
+        return;
+      }
+
       if (this.newDevice.name == "") {
         this.$notify({
           type: "warning",
@@ -360,6 +381,16 @@ export default {
     },
 
     deleteDevice(device) {
+
+      if ( localStorage.getItem("demo") == "true") {
+          this.$notify({
+            type: "success",
+            icon: "tim-icons icon-alert-circle-exc",
+            message: "This is a Demo version"
+          });
+        return;
+      }
+
       const axiosHeader = {
         headers: {
           token: this.$store.state.auth.token
