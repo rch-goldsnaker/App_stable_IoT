@@ -856,7 +856,7 @@ export default {
     //Save Template
     async saveTemplate() {
 
-      if ( localStorage.getItem("demo") == "true") {
+      if ( localStorage.getItem("데머") == "진실") {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",
@@ -908,7 +908,7 @@ export default {
     //Delete Template
     async deleteTemplate(template) {
 
-      if ( localStorage.getItem("demo") == "true") {
+      if ( localStorage.getItem("데머") == "진실") {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",

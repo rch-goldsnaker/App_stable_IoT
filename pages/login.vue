@@ -69,10 +69,13 @@ export default {
     };
   },
   mounted() {
-    const token = process.env.token_demo;
-    localStorage.setItem('auth',token);
-    localStorage.setItem('demo', 'true');
-    $nuxt.$router.push('/dashboard');
+    const tokenDemo = process.env.token_demo;
+    const demoVersion = process.env.demo_version;
+    if(demoVersion=='진실'){
+      localStorage.setItem('auth',tokenDemo);
+      localStorage.setItem('데머', demoVersion);
+      $nuxt.$router.push('/dashboard');
+    }
   },
   methods: {
     login() {

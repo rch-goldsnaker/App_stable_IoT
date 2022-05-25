@@ -169,7 +169,7 @@ export default {
   methods: {
     updateSaverRuleStatus(rule) {
 
-      if ( localStorage.getItem("demo") == "true") {
+      if ( localStorage.getItem("데머") == "진실") {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",
@@ -262,7 +262,7 @@ export default {
     //new device
     createNewDevice() {
 
-      if ( localStorage.getItem("demo") == "true") {
+      if ( localStorage.getItem("데머") == "진실") {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",
@@ -382,7 +382,7 @@ export default {
 
     deleteDevice(device) {
 
-      if ( localStorage.getItem("demo") == "true") {
+      if ( localStorage.getItem("데머") == "진실") {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",

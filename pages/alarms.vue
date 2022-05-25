@@ -283,7 +283,7 @@ export default {
 
     createNewRule() {
 
-      if ( localStorage.getItem("demo") == "true") {
+      if ( localStorage.getItem("데머") == "진실") {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",
@@ -291,7 +291,6 @@ export default {
           });
         return;
       }
-
       if (this.selectedWidgetIndex == null) {
         this.$notify({
           type: "warning",
