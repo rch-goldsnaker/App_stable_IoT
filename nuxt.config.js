@@ -64,7 +64,8 @@ export default {
    mqtt_host: process.env.MQTT_HOST,
    mqtt_port: process.env.MQTT_PORT,
    ws_host: process.env.WS_HOST,
-   ws_port: process.env.WS_PORT
+   ws_port: process.env.WS_PORT,
+   token_demo: process.env.TOKEN_DEMO
   },
 
   server: {
